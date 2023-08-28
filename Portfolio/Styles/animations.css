@@ -1,0 +1,76 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(to bottom right,
+    #0D1B2A 0%,
+    #1B263B 25%, 
+    #415A77 50%, 
+    #778DA9 75%,
+    #A6B8D0 100%);
+    background-size: 200%, 200%;
+    animation: animateBackground 4s linear infinite alternate;
+
+}
+
+@keyframes animateBackground {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+        /* Termina en la esquina inferior derecha */
+    }
+}
+
+
+#hero button {
+    font-size: 1.5em;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    opacity: 0; /* Inicialmente, oculta el h1 */
+    transform: translateY(20px); /* Empuja el h1 hacia abajo */
+    transition: opacity 4s, transform 4s; /* Agrega una transición suave */
+  }
+
+@media (max-width: 768px) {
+    #hero h1 {
+      font-size: 1.9rem; /* Reducir tamaño de fuente para pantallas pequeñas */
+    }
+  }
+  
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+.AnimationWritte {
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 8ch;
+    overflow: hidden;
+    animation: typing 4s steps(8), blink 0.5s infinite step-end alternate;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .AnimationWritte {
+   font-size: 1.8em;
+    }
+  }
