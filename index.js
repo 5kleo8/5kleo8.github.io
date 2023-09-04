@@ -6,3 +6,17 @@ window.addEventListener('load', function() {
     h1Element.style.opacity = '1';
     h1Element.style.transform = 'translateY(0)';
   });
+
+
+  const mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // Número de slides visibles a la vez
+    spaceBetween: 20, // Espacio entre slides
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
