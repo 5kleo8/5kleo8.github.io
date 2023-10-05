@@ -5,3 +5,18 @@
 }
 
 
+.changeColor {
+    animation: changeColor 3s infinite; /* Duración de 3 segundos, animación infinita */
+}
+
+@keyframes changeColor {
+    0% {
+        color: #ff0000; /* Color inicial (rojo) */
+    }
+    50% {
+        color: #00ff00; /* Color a la mitad de la animación (verde) */
+    }
+    100% {
+        color: #0000ff; /* Color final (azul) */
+    }
+}

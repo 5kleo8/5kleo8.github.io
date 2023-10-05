@@ -23,11 +23,16 @@
     height: 150px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; 
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    text-align: center;
     border: white solid 1px;
     border-radius: 10px;
     background-color: none;
+}
+
+.Frontend-cards:hover, .Backend-cards:hover{
+    border-color: var(--body-divider);
 }
 
 .Frontend-icon,
@@ -43,58 +48,65 @@
 
 .icon-html {
     color: #e44d26;
-    background-color: transparent; /* Fondo transparente por defecto */
-    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+    background-color: transparent;
+    /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease;
+    /* Agrega una transición suave para el cambio de color de fondo */
 }
 
 .icon-html:hover {
-    color: #f35c37;}
+    color: #f35c37;
+}
 
-.icon-css{
+.icon-css {
     color: #264de4;
 }
-.icon-css:hover{
+
+.icon-css:hover {
     color: #4167fd;
 }
 
-.icon-javascript{
+.icon-javascript {
     color: #f7df1e;
 }
-.icon-laravel{
+
+.icon-laravel {
     color: #ff2d20;
 }
-.icon-bootstrap{
+
+.icon-bootstrap {
     color: #6f42c1;
 }
-.icon-vue{
+
+.icon-vue {
     color: #42b883;
 }
 
-.icon-react{
+.icon-react {
     color: #61dafb;
 }
 
-.icon-git{
+.icon-git {
     color: #f05032;
 }
 
-.icon-laravel{
+.icon-laravel {
     color: #ff2d20;
 }
 
-.p-skills{
+.p-skills {
     margin-bottom: 20px;
 }
 
 
 #Skills .grid-container .Frontend-cards,
 #Skills .grid-container .Backend-cards {
-    transition: transform 0.3s ease; /* Agrega una transición suave para la transformación */
+    transition: transform 0.3s ease;
 }
 
 #Skills .grid-container .Frontend-cards:hover,
 #Skills .grid-container .Backend-cards:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del elemento al 110% cuando se pasa el mouse */
+    transform: scale(1.1);
 }
 
 
@@ -102,7 +114,6 @@
 @media (max-width: 768px) {
     #Skills .grid-container {
         grid-template-columns: repeat(2, 1fr);
-        /* Dos columnas en lugar de cuatro para dispositivos móviles */
     }
 
 

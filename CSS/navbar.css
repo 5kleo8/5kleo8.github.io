@@ -1,8 +1,4 @@
-:root {
-    --body-background-color: #040404;
-    --body-text-color: #D7D9CE;
-    --navbar-background-color: #119DA4;
-}
+
 
 header {
     display: flex;
@@ -11,6 +7,8 @@ header {
     border-radius: 20px;
     padding: 1em 3em;
     margin: 1em 4em;
+    border: 1px solid;
+    border-color: var(--body-divider);
     background-color: none;
 
 
@@ -43,7 +41,7 @@ header a {
 
 
 .NavButtons:hover {
-    color: var(--navbar-background-color);
+    color: var(--body-divider);
 
 }
 

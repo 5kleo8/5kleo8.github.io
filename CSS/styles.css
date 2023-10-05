@@ -1,7 +1,7 @@
 :root {
-    --body-background-color: #040404;
+    --body-background-color: #0b0c1d  ;
     --body-text-color: #D7D9CE;
-    --navbar-background-color: #119DA4;
+    --body-divider:#119DA4;
   }
 
 * {
@@ -13,8 +13,13 @@
 body {
     background-color: var(--body-background-color) ;
     color: var(--body-text-color);
+    font-family: 'Fira Code', monospace;
+    font-family: 'Gabarito', Arial, Helvetica, sans-serif;
 }
 
+hr{
+    color: var(--body-divider);
+}
 
 h1 {
     font-size: 3em;
