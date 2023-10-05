@@ -1,0 +1,97 @@
+:root {
+    --body-background-color: #040404;
+    --body-text-color: #D7D9CE;
+    --navbar-background-color: #119DA4;
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background-color) ;
+    color: var(--body-text-color);
+}
+
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+span {
+    font-size: 1em;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+#Presentation .container,
+#Projects .container,
+#Skills .container,
+#About .container,
+#Contact .container {
+    padding: 2em 2em;
+    margin: 3em 3em;
+    max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    h4 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    span {
+        font-size: 1em;
+    }
+
+
+    #Presentation .container,
+    #Projects .container,
+    #Skills .container,
+    #About .container,
+    #Contact .container {
+        padding: 1em 1em;
+        margin: 1em;
+        max-width: 100%;
+    }
+}

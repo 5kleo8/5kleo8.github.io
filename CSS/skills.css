@@ -1,0 +1,96 @@
+#Skills .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#Skills .skills-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+
+}
+
+
+.Frontend-cards,
+.Backend-cards {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; 
+    border: white solid 1px;
+    border-radius: 10px;
+    background-color: none;
+}
+
+.Frontend-icon,
+.Backend-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3.7em;
+}
+
+
+.icon-html{
+    color: #e44d26;
+}
+
+.icon-html:hover{
+    color: #f35c37;
+}
+
+.icon-css{
+    color: #264de4;
+}
+
+
+.icon-javascript{
+    color: #f7df1e;
+}
+
+.icon-vue{
+    color: #42b883;
+}
+
+.icon-react{
+    color: #61dafb;
+}
+
+.icon-git{
+    color: #f05032;
+}
+
+.icon-laravel{
+    color: #ff2d20;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #Skills .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas en lugar de cuatro para dispositivos móviles */
+    }
+
+
+    .Frontend-cards,
+    .Backend-cards {
+        width: 150px;
+        /* O ajusta el ancho según tus necesidades */
+
+    }
+
+}

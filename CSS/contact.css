@@ -1,0 +1,24 @@
+#Contact .container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    margin: 150px 12px;
+}
+
+#Contact .container h3 {
+    margin: 2em;
+    font-size: 2em;
+}
+
+#Contact .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el espacio entre el título y los iconos */
+}
+
+#Contact .icon {
+    font-size: 3em; /* Tamaño de fuente más grande para los iconos */
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
