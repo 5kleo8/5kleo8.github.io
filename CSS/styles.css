@@ -23,6 +23,10 @@ hr{
 
 h1 {
     font-size: 3em;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: var(--body-divider);
+    padding: 20px;
 }
 
 h2 {

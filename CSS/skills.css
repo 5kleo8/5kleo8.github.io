@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centra los elementos horizontalmente */
     text-align: center;
     border: white solid 1px;
     border-radius: 10px;
@@ -49,50 +48,84 @@
 .icon-html {
     color: #e44d26;
     background-color: transparent;
-    /* Fondo transparente por defecto */
-    transition: background-color 0.3s ease;
-    /* Agrega una transición suave para el cambio de color de fondo */
+    transition: color 0.3s ease;
 }
 
 .icon-html:hover {
-    color: #f35c37;
+    color: #ff3300;
 }
 
 .icon-css {
-    color: #264de4;
+    color: #476cfd;
+    background-color: transparent;
+    transition: color 0.3s ease;
 }
 
 .icon-css:hover {
-    color: #4167fd;
+    color: #0033ff;
 }
 
 .icon-javascript {
-    color: #f7df1e;
+    color: #ffe83c;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.icon-javascript:hover {
+    color: rgb(255, 225, 0);
 }
 
 .icon-laravel {
     color: #ff2d20;
+    background-color: transparent;
+    transition: color 0.3s ease;
 }
+
+.icon-laravel:hover {
+    color: #ff0d00;
+}
+
 
 .icon-bootstrap {
     color: #6f42c1;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.icon-bootstrap:hover {
+    color: #5900ff;
 }
 
 .icon-vue {
     color: #42b883;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.icon-vue:hover {
+    color: #00f888;
 }
 
 .icon-react {
     color: #61dafb;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.icon-react:hover {
+    color: #00c4fa;
 }
 
 .icon-git {
     color: #f05032;
 }
 
-.icon-laravel {
-    color: #ff2d20;
+.icon-git:hover {
+    color: #ff2600;
+    background-color: transparent;
+    transition: color 0.3s ease;
 }
+
 
 .p-skills {
     margin-bottom: 20px;
