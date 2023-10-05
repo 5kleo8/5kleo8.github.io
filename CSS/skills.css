@@ -1,6 +1,6 @@
 #Skills .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 2fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 25px;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,8 @@
 
 .Frontend-cards,
 .Backend-cards {
-    width: 200px;
-    height: 100px;
+    width: 270px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra los elementos horizontalmente */
@@ -37,27 +37,35 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-size: 3.7em;
+    font-size: 3em;
 }
 
 
-.icon-html{
+.icon-html {
     color: #e44d26;
+    background-color: transparent; /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
 }
 
-.icon-html:hover{
-    color: #f35c37;
-}
+.icon-html:hover {
+    color: #f35c37;}
 
 .icon-css{
     color: #264de4;
 }
-
+.icon-css:hover{
+    color: #4167fd;
+}
 
 .icon-javascript{
     color: #f7df1e;
 }
-
+.icon-laravel{
+    color: #ff2d20;
+}
+.icon-bootstrap{
+    color: #6f42c1;
+}
 .icon-vue{
     color: #42b883;
 }
@@ -74,8 +82,20 @@
     color: #ff2d20;
 }
 
+.p-skills{
+    margin-bottom: 20px;
+}
 
 
+#Skills .grid-container .Frontend-cards,
+#Skills .grid-container .Backend-cards {
+    transition: transform 0.3s ease; /* Agrega una transición suave para la transformación */
+}
+
+#Skills .grid-container .Frontend-cards:hover,
+#Skills .grid-container .Backend-cards:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del elemento al 110% cuando se pasa el mouse */
+}
 
 
 
