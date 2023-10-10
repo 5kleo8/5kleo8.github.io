@@ -11,3 +11,43 @@
     border-radius: 20px;
     text-align: center;
 }
+
+
+[data-animation="up1"] {
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .6s ease .3s;
+
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+[data-animation="up2"] {
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .6s ease .3s;
+
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+[data-animation="up3"] {
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .6s ease .3s;
+
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+
+.unset {
+    opacity: var(--opacity);
+    transform: var(--transform);
+}

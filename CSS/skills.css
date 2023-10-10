@@ -30,8 +30,10 @@
     background-color: none;
 }
 
-.Frontend-cards:hover, .Backend-cards:hover{
+.Frontend-cards:hover,
+.Backend-cards:hover {
     border-color: var(--body-divider);
+    transition: 2ms;
 }
 
 .Frontend-icon,
@@ -41,7 +43,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-size: 3em;
+    font-size: 3.7em;
 }
 
 
@@ -132,17 +134,20 @@
 }
 
 
-#Skills .grid-container .Frontend-cards,
-#Skills .grid-container .Backend-cards {
-    transition: transform 0.3s ease;
+@media (max-width: 1080px) {
+    #Skills .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .Frontend-cards,
+    .Backend-cards {
+        width: 150px;
+        /* O ajusta el ancho según tus necesidades */
+
+    }
+
 }
-
-#Skills .grid-container .Frontend-cards:hover,
-#Skills .grid-container .Backend-cards:hover {
-    transform: scale(1.1);
-}
-
-
 
 @media (max-width: 768px) {
     #Skills .grid-container {
@@ -157,4 +162,92 @@
 
     }
 
+}
+
+
+[data-animation="show1"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 150ms ease-in 1ms;
+
+
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show2"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 200ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show3"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 250ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show4"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 300ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show5"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 350ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show6"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 400ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show7"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 450ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="show8"] {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 500ms ease-in 1ms;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+.unset {
+    opacity: var(--opacity);
+    transform: var(--transform);
 }
